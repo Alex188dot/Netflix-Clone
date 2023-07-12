@@ -107,7 +107,7 @@
           flex-direction: column;
           margin-top: 1rem;
          }
-         .btn.btn-outline-light {
+         .service-code {
           margin-top: 0.5rem;
           margin-bottom: 0.5rem;
            font-size: 0.6rem;
@@ -127,7 +127,7 @@
             <img
                src="Netflix_Logo_RGB.png"
                alt="netflix-logo"
-               style="width: 80px"
+               style="width: 80px; margin-left: 2.5rem"
                />
             </a>
             <button
@@ -153,36 +153,43 @@
                      <a class="nav-link" href="#">Movies</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Recently added</a>
+                     <a class="nav-link" href="#">Recently Added</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">My List</a>
                   </li>
                </ul>
             </div>
-         </div>
+          <i class="fa-solid fa-magnifying-glass" style="color: #8790a1; margin-right: 1rem"></i>
+          <div style="color: white; font-size: 0.7rem; margin-right: 1rem">KIDS</div>
+          <i class="fa-solid fa-bell" style="color: #8790a1; margin-right: 1rem"></i>
+          <div>
+            <img src="profile-pic.png" alt="profile-pic" style="width: 30px; margin-right: 0.3rem">
+          </div>
+          <i class="fa-solid fa-caret-down" style="color: #8790a1; margin-right: 1rem"></i>
+        </div>
       </nav>
-      <div class="container tv-shows-heading">
+      <div class="container-fluid tv-shows-heading">
          <h2 style="display: inline-flex; margin-right: 1rem">TV Shows</h2>
          <div class="btn-group drpdwn-menu">
             <button
                type="button"
-               class="btn btn-secondary dropdown-toggle"
+               class="btn btn-outline-light dropdown-toggle"
                data-bs-toggle="dropdown"
                aria-expanded="false"
                >
             Genres
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
-               <li><button class="dropdown-item" type="button">Action</button></li>
-               <li>
-                  <button class="dropdown-item" type="button">Another action</button>
-               </li>
-               <li>
-                  <button class="dropdown-item" type="button">
-                  Something else here
-                  </button>
-               </li>
+              <li><button class="dropdown-item trending-now" type="button">Trending Now</button></li>
+              <li>
+                <button class="dropdown-item watch-it-again" type="button">Watch It Again</button>
+              </li>
+              <li>
+                <button class="dropdown-item new-releases" type="button">
+                  New Releases
+                </button>
+              </li>
             </ul>
          </div>
       </div>
@@ -1352,23 +1359,17 @@
               </div>
             </div>
             <div class="col-12 footer-box-icons">
-              <button type="button" class="btn btn-outline-light">Service code</button>
+              <button type="button" class="btn btn-outline-light service-code">Service code</button>
             </div>
             <div class="col-12 footer-box-icons">
               <div class="copyright-notice">© 1997-2019 Netfix, Inc. All rights reserved.</div>
             </div>
           </div>
         </div>
-
-
-
-
-
       </footer>
-
-
       <!-- fine footer -->
       <script>
+        // Add extra carousels when scrolling down
          let sliders = document.getElementsByClassName("slider-h");         
          let threshold = 130;
          
@@ -1388,6 +1389,29 @@
          
          window.addEventListener("scroll", showSliders);
          window.addEventListener("load", showSliders);
+
+         // When selecting a category from the dropdown button it will show only the corresponding category
+
+          const buttons = document.querySelectorAll(".dropdown-item");
+
+          buttons.forEach((button) => {
+            button.addEventListener("click", filterByCategory);
+          });
+
+          function filterByCategory(event) {
+            const category = event.target.innerText;
+            const sliders = document.querySelectorAll(".slider");
+
+            sliders.forEach((slider) => {
+              const sliderCategory = slider.querySelector(".category").innerText;
+              if (category === sliderCategory) {
+                slider.style.display = "block";
+              }  else {
+                slider.style.display = "none";
+              }
+            });
+          }
+
       </script>
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
