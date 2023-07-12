@@ -21,7 +21,7 @@
          .container-fluid,
          .container {
          width: 100%;
-         border: 1px solid black;
+         border: 1px solid white;
          }
          .nav-link {
            color: white !important;
@@ -34,10 +34,10 @@
          color: white;
          }
          /* apply some style to the first div children of .row */
-        .row > div:first-child {
+        .category {
           color: white;
           font-weight: bold;
-          margin-top: 1rem;
+          margin-bottom: 0.8rem;
         }
          .col-12 img {
          margin-right: 0.3rem;
@@ -46,6 +46,7 @@
          .row {
          margin: 0;
          }
+
          .slider {
          margin-top: 2rem;
          }
@@ -135,7 +136,7 @@
       <!-- slider 1 -->
       <div class="container slider">
          <div class="row">
-            <div>Trending Now</div>
+            <div class="category">Trending Now</div>
             <div id="carousel-one" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -293,7 +294,7 @@
       <!-- slider 2 -->
       <div class="container slider">
          <div class="row">
-            <div>Watch It Again</div>
+            <div class="category">Watch It Again</div>
             <div id="carousel-two" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -451,7 +452,7 @@
       <!-- slider 3 -->
       <div class="container slider">
       <div class="row">
-         <div>New Releases</div>
+         <div class="category">New Releases</div>
          <div id="carousel-three" class="carousel slide">
             <div class="carousel-inner">
                <div class="carousel-item active">
@@ -608,7 +609,7 @@
       <!-- slider extra -->
       <div class="container slider">
          <div class="row">
-            <div>Comedy</div>
+            <div class="category">Comedy</div>
             <div id="carousel-extra" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -766,7 +767,7 @@
       <!-- slider 4 -->
       <div class="container slider">
          <div class="row">
-            <div>Romance</div>
+            <div class="category">Romance</div>
             <div id="carousel-four" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -924,7 +925,7 @@
       <!-- slider 5 -->
       <div class="container slider slider-h hidden">
          <div class="row">
-            <div>Drama</div>
+            <div class="category">Drama</div>
             <div id="carousel-five" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -1082,7 +1083,7 @@
       <!-- slider 6 -->
       <div class="container slider slider-h hidden">
       <div class="row">
-         <div>Documentary</div>
+         <div class="category">Documentary</div>
          <div id="carousel-six" class="carousel slide">
             <div class="carousel-inner">
                <div class="carousel-item active">
@@ -1236,7 +1237,13 @@
          </div>
       </div>
       <!-- end slider 6 -->
-      <!-- ... -->
+      <!-- inizio footer -->
+      
+
+
+
+
+      <!-- fine footer -->
       <script>
          let sliders = document.getElementsByClassName("slider-h");         
          let threshold = 130;
