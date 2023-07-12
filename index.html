@@ -46,10 +46,19 @@
          .row {
          margin: 0;
          }
-
+         .carousel-inner {
+           overflow: visible !important;
+         }
          .slider {
          margin-top: 2rem;
          }
+         .col-12.col-md-4.col-lg-2 {
+          transition: transform 0.4s ease-in-out;
+        }
+  
+        .col-12.col-md-4.col-lg-2:hover {
+          transform: scale(1.1);
+        }
          .carousel-control-prev,
          .carousel-control-next {
          position: absolute;
@@ -65,6 +74,19 @@
          .hidden {
          display: none;
          }
+         .footer {
+          margin-top: 1rem;
+          height: 20rem;
+         }
+         .footer-box {
+           width: 50%;
+           height: 100%;
+           border: 1px solid white;
+           margin: auto;
+           
+
+         }
+          
       </style>
    </head>
    <body>
@@ -1232,15 +1254,30 @@
                      </div>
                   </div>
                </div>
-               <!-- ... -->
+              </div>
             </div>
          </div>
-      </div>
       <!-- end slider 6 -->
       <!-- inizio footer -->
-      
+      </div>
+
+      <footer>
+        <div class="container footer">
+          <div class="row">
+            <div class="col-12 footer-box">
+              <i class="fa-brands fa-twitter" style="color: #8790a1;"></i>
+              <i class="fa-brands fa-square-facebook" style="color: #8790a1;"></i>
+              <i class="fa-brands fa-youtube" style="color: #8790a1;"></i>
+              <i class="fa-brands fa-square-instagram" style="color: #8790a1;"></i>
+            </div>
+          </div>
+        </div>
 
 
+
+
+
+      </footer>
 
 
       <!-- fine footer -->
@@ -1270,5 +1307,6 @@
          integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
          crossorigin="anonymous"
          ></script>
+         <script src="https://kit.fontawesome.com/b1e024117b.js" crossorigin="anonymous"></script>
    </body>
 </html>
