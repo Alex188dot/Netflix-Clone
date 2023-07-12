@@ -15,17 +15,30 @@
         html {
           scroll-behavior: smooth;
         }        
+        body, .navbar {
+          background-color: #141414 !important;
+        }
          .container-fluid,
          .container {
          width: 100%;
          border: 1px solid black;
+         }
+         .nav-link {
+           color: white !important;
          }
          .tv-shows-heading {
          margin-top: 2rem;
          margin-bottom: 2rem;
          display: flex;
          align-items: center;
+         color: white;
          }
+         /* apply some style to the first div children of .row */
+        .row > div:first-child {
+          color: white;
+          font-weight: bold;
+          margin-top: 1rem;
+        }
          .col-12 img {
          margin-right: 0.3rem;
          width: 98%;
@@ -54,7 +67,7 @@
       </style>
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
             <img
@@ -81,9 +94,6 @@
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">TV Shows</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#">Movies</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">Movies</a>
@@ -598,7 +608,7 @@
       <!-- slider extra -->
       <div class="container slider">
          <div class="row">
-            <div>Trending Now</div>
+            <div>Comedy</div>
             <div id="carousel-extra" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -756,7 +766,7 @@
       <!-- slider 4 -->
       <div class="container slider">
          <div class="row">
-            <div>Trending Now</div>
+            <div>Romance</div>
             <div id="carousel-four" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -914,7 +924,7 @@
       <!-- slider 5 -->
       <div class="container slider slider-h hidden">
          <div class="row">
-            <div>Watch It Again</div>
+            <div>Drama</div>
             <div id="carousel-five" class="carousel slide">
                <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -1072,7 +1082,7 @@
       <!-- slider 6 -->
       <div class="container slider slider-h hidden">
       <div class="row">
-         <div>New Releases</div>
+         <div>Documentary</div>
          <div id="carousel-six" class="carousel slide">
             <div class="carousel-inner">
                <div class="carousel-item active">
