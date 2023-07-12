@@ -12,34 +12,56 @@
       crossorigin="anonymous"
     />
     <style>
-      .carousel-item {
-        display: flex;
-        flex-direction: row;
-      }
-    
-      .container-fluid {
+      .container-fluid,
+      .container {
         width: 100%;
-        overflow-x: auto;
+        border: 1px solid black;
       }
-    
-      .col {
-        width: 200px;
+
+      .tv-shows-heading {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
       }
-    
+
+      .col-12 img {
+        margin-right: 0.3rem;
+        width: 98%;
+      }
+
       .row {
         margin: 0;
+      }
+      .slider {
+        margin-top: 2rem;
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .carousel-control-prev {
+        left: 0;
+      }
+
+      .carousel-control-next {
+        right: 0;
       }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img
+        <a class="navbar-brand" href="#">
+          <img
             src="Netflix_Logo_RGB.png"
             alt="netflix-logo"
             style="width: 80px"
-        /></a>
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -75,20 +97,16 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>TV Shows</h1>
-        </div>
-      </div>
-      <div class="btn-group">
+    <div class="container tv-shows-heading">
+      <h2 style="display: inline-flex; margin-right: 1rem">TV Shows</h2>
+      <div class="btn-group drpdwn-menu">
         <button
           type="button"
           class="btn btn-secondary dropdown-toggle"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          Right-aligned menu example
+          Genres
         </button>
         <ul class="dropdown-menu dropdown-menu-end">
           <li><button class="dropdown-item" type="button">Action</button></li>
@@ -103,63 +121,327 @@
         </ul>
       </div>
     </div>
-    <!-- slider -->
-    <div class="container">
+    <!-- slider 1 -->
+    <div class="container slider">
       <div class="row">
-        <div id="carousel-one" class="carousel slide" data-bs-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-bs-target="#carousel-one" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carousel-one" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carousel-one" data-bs-slide-to="2"></li>
-          </ol>
+        <div>Trending now</div>
+        <div id="carousel-one" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="container-fluid">
-                <div class="row gx-2 c-flex">
-                  <div class="col"><img src="movies/1.png" alt=""></div>
-                  <div class="col"><img src="movies/2.png" alt=""></div>
-                  <div class="col"><img src="movies/3.png" alt=""></div>
-                  <div class="col"><img src="movies/4.png" alt=""></div>
-                  <div class="col"><img src="movies/5.png" alt=""></div>
-                  <div class="col"><img src="movies/6.png" alt=""></div>
-                </div> <!-- added closing tag -->
+                <div class="row gx-2">
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/1.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/2.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/3.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/4.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/5.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/6.png" alt="" />
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
-              <!-- removed redundant image -->
+            </div>
+            <!-- added second slide -->
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row gx-2 c-flex">
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/7.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/8.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/9.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/10.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/11.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/12.png" alt="" />
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- added third slide -->
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row gx-2 c-flex">
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/13.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/14.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/15.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/16.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/17.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/18.png" alt="" />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-one"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-one"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carousel-one"
-            data-bs-slide="prev">
-            <span
-              class="
-                carousel-control-prev-icon
-                aria-hidden=\"true\"
-              ></span>
-            <span
-              >Previous</span
-            >
-          </button>
-          <button
-            class="
-              carousel-control-next
-              type=\"button\"
-              data-bs-target=\"#carousel-one\"
-              data-bs-slide=\"next\">
-            <span
-              >Next</span></button>
+          <!-- ... -->
         </div>
-        <script
-          src="
-            https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
-          "
-          integrity="
-            sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz
-          "
-          crossorigin="
-            anonymous
-          "></script>
-      </body>
-    </html>
-    
+      </div>
+    </div>
+    <!-- end slider 1 -->
+    <!-- slider 2 -->
+    <div class="container slider">
+      <div class="row">
+        <div>Trending now</div>
+        <div id="carousel-one" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row gx-2">
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/1.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/2.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/3.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/4.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/5.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/6.png" alt="" />
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- added second slide -->
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row gx-2 c-flex">
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/7.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/8.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/9.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/10.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/11.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/12.png" alt="" />
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carousel-one"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- added third slide -->
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row gx-2 c-flex">
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/13.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/14.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/15.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/16.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/17.png" alt="" />
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-2">
+                    <img src="movies/18.png" alt="" />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-one"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-one"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- ... -->
+        </div>
+      </div>
+    </div>
+    <!-- end slider 2 -->
+    <!-- ... -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
