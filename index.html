@@ -76,17 +76,33 @@
          }
          .footer {
           margin-top: 1rem;
-          height: 20rem;
+          height: 10rem;
          }
-         .footer-box {
+         .footer-box-icons {
            width: 50%;
            height: 100%;
            border: 1px solid white;
            margin: auto;
-           
-
          }
-          
+         .footer-box-links {
+          height: 100%;
+          width: 50%;
+          font-size: 0.7rem;
+          border: 1px solid white;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+         }
+         .footer-box-links a {
+           text-decoration: none;
+           color: white;
+         }
+         .footer-row {
+          display: flex;
+          flex-direction: column;
+          margin-top: 1rem;
+         }
       </style>
    </head>
    <body>
@@ -1263,12 +1279,53 @@
 
       <footer>
         <div class="container footer">
-          <div class="row">
-            <div class="col-12 footer-box">
+          <div class="row footer-row">
+            <div class="col-12 footer-box-icons">
               <i class="fa-brands fa-twitter" style="color: #8790a1;"></i>
               <i class="fa-brands fa-square-facebook" style="color: #8790a1;"></i>
               <i class="fa-brands fa-youtube" style="color: #8790a1;"></i>
               <i class="fa-brands fa-square-instagram" style="color: #8790a1;"></i>
+            </div>
+            <div class="container footer-box-links">
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/audio-and-subtitles">Audio and Subtitles</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/audio-description">Audio Description</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/help-center">Help Center</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/gift-cards">Gift Cards</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/media-center">Media Center</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/investor-relations">Investor Relations</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/jobs">Jobs</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/terms-of-use">Terms of Use</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/privacy">Privacy</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/legal-notices">Legal Notices</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/cookie-preferences">Cookie Preferences</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/corporate-information">Corporate Information</a>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">
+                <a href="https://example.com/contact-us">Contact Us</a>
+              </div>
             </div>
           </div>
         </div>
