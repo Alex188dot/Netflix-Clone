@@ -14,4 +14,4 @@ Please note Google Chrome issues an unnecessary security warning, as it detects 
 
 <img width="1407" alt="s1" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/26d51407-5911-4972-9d21-c439a348d6f3">
 
-<img width="1366" alt="s2" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/a0a5c384-1416-4246-a2e8-992554ac23ac">
+<img width="1299" alt="s2" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/e6fb057f-2ff7-491b-9e95-9f18d3b3dfc0">
