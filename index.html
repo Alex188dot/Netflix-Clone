@@ -24,6 +24,7 @@
          }
          .nav-link {
            color: white !important;
+           font-size: 0.8rem !important;
          }
          .tv-shows-heading {
          margin-top: 2rem;
@@ -94,7 +95,7 @@
          }
          .footer-box-links a {
            text-decoration: none;
-           color: white;
+           color: #8790a1;
          }
          .footer-box-icons a {
            text-decoration: none;
@@ -111,15 +112,17 @@
            font-size: 0.6rem;
            width: 5.5rem;
            height: 1.8rem;
+           color: #8790a1;
+           border: 1px solid #8790a1;
          }
          .copyright-notice {
-          color: white;
+          color: #8790a1;
           font-size: 0.6rem;
          }
       </style>
    </head>
    <body>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-dark bg-dark">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
             <img
@@ -158,17 +161,17 @@
                   </li>
                </ul>
             </div>
-          <i class="fa-solid fa-magnifying-glass" style="color: #8790a1; margin-right: 1rem"></i>
-          <div style="color: white; font-size: 0.7rem; margin-right: 1rem">KIDS</div>
-          <i class="fa-solid fa-bell" style="color: #8790a1; margin-right: 1rem"></i>
+            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #8790a1; margin-right: 1rem"></i></a>
+          <div style="color: white; font-size: 0.7rem; margin-right: 1rem"><a class="nav-link" href="#">KIDS</a></div>
+          <a class="nav-link" href="#"><i class="fa-solid fa-bell" style="color: #8790a1; margin-right: 1rem"></i></a>
           <div>
-            <img src="profile-pic.png" alt="profile-pic" style="width: 30px; margin-right: 0.3rem">
+            <a class="nav-link" href="#"><img src="profile-pic.png" alt="profile-pic" style="width: 30px; margin-right: 0.3rem"></a>
           </div>
-          <i class="fa-solid fa-caret-down" style="color: #8790a1; margin-right: 1rem"></i>
+          <a class="nav-link" href="#"><i class="fa-solid fa-caret-down" style="color: #8790a1; margin-right: 1rem"></i></a>
         </div>
       </nav>
       <div class="container-fluid tv-shows-heading">
-         <h2 style="display: inline-flex; ; margin-left: 2.5rem; margin-right: 1rem">TV Shows</h2>
+         <h3 style="display: inline-flex; ; margin-left: 2.5rem; margin-right: 1rem">TV Shows</h3>
          <div class="btn-group drpdwn-menu">
             <button
                type="button"
@@ -664,7 +667,7 @@
          </div>
       </div>
       <!-- end slider 3 -->
-      <!-- slider extra -->
+      <!-- slider 4 -->
       <div class="container slider">
          <div class="row">
             <div class="category">Comedy</div>
@@ -677,19 +680,19 @@
                               <img src="movies/10.png" alt="" />
                            </div>
                            <div class="col-12 col-md-4 col-lg-2">
+                              <img src="movies/13.png" alt="" />
+                           </div>
+                           <div class="col-12 col-md-4 col-lg-2">
+                              <img src="movies/8.png" alt="" />
+                           </div>
+                           <div class="col-12 col-md-4 col-lg-2">
+                              <img src="movies/15.png" alt="" />
+                           </div>
+                           <div class="col-12 col-md-4 col-lg-2">
                               <img src="movies/2.png" alt="" />
                            </div>
                            <div class="col-12 col-md-4 col-lg-2">
-                              <img src="movies/3.png" alt="" />
-                           </div>
-                           <div class="col-12 col-md-4 col-lg-2">
-                              <img src="movies/4.png" alt="" />
-                           </div>
-                           <div class="col-12 col-md-4 col-lg-2">
-                              <img src="movies/5.png" alt="" />
-                           </div>
-                           <div class="col-12 col-md-4 col-lg-2">
-                              <img src="movies/6.png" alt="" />
+                              <img src="movies/16.png" alt="" />
                            </div>
                            <button
                               class="carousel-control-prev"
@@ -821,9 +824,9 @@
             </div>
          </div>
       </div>
-      <!-- end slider extra -->
-      <!-- slider 4 -->
-      <div class="container slider">
+      <!-- end slider 4 -->
+      <!-- slider 5 -->
+      <div class="container slider slider-h hidden">
          <div class="row">
             <div class="category">Romance</div>
             <div id="carousel-four" class="carousel slide">
@@ -979,8 +982,8 @@
             </div>
          </div>
       </div>
-      <!-- end slider 4 -->
-      <!-- slider 5 -->
+      <!-- end slider 5 -->
+      <!-- slider 6 -->
       <div class="container slider slider-h hidden">
          <div class="row">
             <div class="category">Drama</div>
@@ -1137,8 +1140,8 @@
             </div>
          </div>
       </div>
-      <!-- end slider 5 -->
-      <!-- slider 6 -->
+      <!-- end slider 6 -->
+      <!-- slider 7 -->
       <div class="container slider slider-h hidden">
       <div class="row">
          <div class="category">Documentary</div>
@@ -1293,8 +1296,8 @@
               </div>
             </div>
          </div>
-      <!-- end slider 6 -->
-      <!-- inizio footer -->
+      <!-- end slider 7 -->
+      <!-- footer -->
       </div>
 
       <footer>
@@ -1365,11 +1368,11 @@
           </div>
         </div>
       </footer>
-      <!-- fine footer -->
+      <!-- end footer -->
       <script>
         // Add extra carousels when scrolling down
          let sliders = document.getElementsByClassName("slider-h");         
-         let threshold = 130;
+         let threshold = 180;
          
          function showSliders() {
            let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
