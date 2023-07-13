@@ -1,8 +1,9 @@
 # Netflix Clone
 
-This is a static web page that looks like the Netflix homepage. It uses HTML, CSS, JS and Bootstrap v5.3.
+This is a static web page that looks like the Netflix homepage. It uses HTML, CSS, JS and Bootstrap v5.3. The sliders have working previous and next arrow buttons on the sides, the design is fully responsive, you can try the mobile version via the Inspect element tool. 
 
 # Live Preview
+
 For a live preview of the web page you can visit: https://alex188dot.github.io/netflix-clone/
 Please note Google Chrome issues an unnecessary security warning, as it detects the site is a copy of Netflix, so feel free to open it on any other browser.
 
