@@ -5,7 +5,7 @@ This is a static web page that looks like the Netflix homepage. It uses HTML, CS
 # Live Preview
 
 For a live preview of the web page you can visit: https://alex188dot.github.io/netflix-clone/      
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 **Please note Google Chrome issues an unnecessary security warning, as it detects the site is a copy of Netflix, so please open it on any other browser. The webpage is completely safe!**
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # What I was trying to recreate:
