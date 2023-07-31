@@ -14,6 +14,6 @@ For a live preview of the web page you can visit: https://alex188dot.github.io/n
 
 # What I made:
 
-<img width="1407" alt="s1" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/26d51407-5911-4972-9d21-c439a348d6f3">
+<img width="1422" alt="Netflix1" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/ef1ab2bb-8c1b-4d11-bfe9-a635484e6e7e">
 
-<img width="1299" alt="s2" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/e6fb057f-2ff7-491b-9e95-9f18d3b3dfc0">
+<img width="1407" alt="Netflix2" src="https://github.com/Alex188dot/netflix-clone/assets/117444853/3ca5b470-c327-45b8-b9ec-ccc3f8ad2694">
